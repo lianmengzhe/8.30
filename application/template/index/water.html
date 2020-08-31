@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水封比系列</title>
+</head>
+<link rel="stylesheet" href="{CSS_ADD}/index/common.css">
+<link rel="stylesheet" href="{CSS_ADD}/index/products.css">
+<body>
+<!--  头部nav栏目开始  -->
+{include file=$header}
+<!--  头部nav栏目结束  -->
+<div class="informSmall">
+    <div class="informations">
+        {foreach $coninfo as $v}
+        <div class="informItem">
+            <img src="{$v['imgurl']}" >
+            <p>{$v["ctitle"]}</p>
+        </div>
+        {/foreach}
+    </div>
+</div>
+
+    <div class="detailInformation">
+        <div class="detailContent">
+            <div class="productTitle">多功能旋风方形地漏</div>
+            <div class="productDes">
+                <p>你的卫生间期待已久</p>
+                <p>一位真正保护她的骑士</p>
+            </div>
+            <div class="productAct">
+                <a href="/mvc2/index.php/index/gootherpages/detail">进一步了解</a> <a href="/mvc2/index.php/index/gootherpages/parameter">查看参数</a> <a
+                    href="/mvc2/index.php/index/gootherpages/buy">购买</a>
+            </div>
+        </div>
+        <img src="{IMG_ADD}20170314092010_83379.png">
+    </div>
+
+    <div class="detailInformation">
+        <img src="{IMG_ADD}20170314092010_83379.png">
+        <div class="detailContent">
+            <div class="productTitle">多功能旋风洗衣机地</div>
+            <div class="productDes">
+                <p>让你的洗衣机</p>
+                <p>开始享受排水的一瞬间</p>
+            </div>
+            <div class="productAct">
+                <a href="/mvc2/index.php/index/gootherpages/detail">进一步了解</a> <a href="/mvc2/index.php/index/gootherpages/parameter">查看参数</a> <a
+                    href="/mvc2/index.php/index/gootherpages/buy">购买</a>
+            </div>
+        </div>
+    </div>
+
+    <!--  底部部分开始  -->
+{include file=$footer}
+    <!--  底部部分结束  -->
+
+</body>
+<script src="{JS_ADD}common.js"></script>
+</html>

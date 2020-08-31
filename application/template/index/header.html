@@ -1,0 +1,69 @@
+
+<link rel="stylesheet" href="{CSS_ADD}index/common.css">
+<header>
+    <div class="headerContent">
+        <div class="logo">
+            <img src="{IMG_ADD}logo.jpg">
+        </div>
+        <div class="navs">
+            <ul>{foreach $menuData as $v}
+                <li>
+                    <a href="/mvc2/index.php/index/category?cid={$v['cid']}">{$v["cname"]}</a>
+                    {if isset($v["child"])}
+                    <ul class="son">
+                        {foreach $v["child"] as $v1}
+                        <li>
+                            <a href="/mvc2/index.php/index/lists?cid=${$v1['cid']}">
+                                {$v1["cname"]}
+                            </a>
+                        </li>
+                        {/foreach}
+                    </ul>
+                    {/if}
+                </li>
+                {/foreach}
+            </ul>
+        </div>
+
+        <div class="inputShadow">
+            <div class="searchInput">
+                <input placeholder="请输入查询关键字">
+            </div>
+        </div>
+        <div class="search">
+            <span class="close">×</span>
+            <img class="seaImg" src="{IMG_ADD}btn_buy_05.jpg" alt="">
+        </div>
+        <div class="self">
+            <img class="slefImg" src="{IMG_ADD}btn_buy_07.jpg" alt="">
+            <div class="selfCenter">
+                个人中心
+            </div>
+            <div class="selfAct">
+                <div class="selfArrow"></div>
+                <div class="selfActItem">
+                    <div class="items">
+                        <img src="{IMG_ADD}btn_buy_17.jpg" alt="">
+                        <p style="display: inline-block;">购物袋</p>
+                    </div>
+                    <div class="items">
+                        <img src="{IMG_ADD}btn_buy_17.jpg" alt="">
+                        <p style="display: inline-block;">购物袋</p>
+                    </div>
+                    <div class="items">
+                        <img src="{IMG_ADD}btn_buy_17.jpg" alt="">
+                        <p style="display: inline-block;">购物袋</p>
+                    </div>
+                    <div class="items">
+                        <img src="{IMG_ADD}btn_buy_17.jpg" alt="">
+                        <p style="display: inline-block;">购物袋</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script src="{JS_ADD}index.js"></script>
+<script src="{JS_ADD}common.js"></script>
